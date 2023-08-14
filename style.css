@@ -11,8 +11,8 @@ body {
 	margin: 0;
 	background: #fff;
 	color: #000;
-    padding: 0
-    ;
+    justify-content: center;
+    display: flex;
 }
 
 header {
@@ -179,7 +179,7 @@ header {
 }
 
 
-
+/*Page 2*/
 
 
 
@@ -221,3 +221,39 @@ header {
         background-image: url(Images/Kākāpo/hallway.jpg);
     }
 }
+
+
+.cover {
+    position: relative;
+    width: 900px;
+    height: 400px;
+    margin-top: 25%;
+    display: flex;
+    justify-content: center; /* Center boxes horizontally */
+    align-items: center; /* Center boxes vertically */
+}
+
+.box {
+    width: 600px; /* Adjusted width */
+    height: 200px; /* Initial height: show only a part of the box */
+    box-shadow: -1px 0 10px #000000;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: lightblue;
+    overflow: hidden; /* Hide overflow content */
+    transition: height 0.3s;
+    margin: 10px;
+    margin-left: 20px; /* Adjusted margin */
+}
+
+.box:hover {
+    height: 400px; /* Full height: display the whole box */
+}
+
+
+
+
+
+
+
