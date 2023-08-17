@@ -1,4 +1,4 @@
-/* Home Page */
+/*Home Page*/
 
 /* Reset default styles and set box-sizing */
 * {
@@ -12,10 +12,10 @@ body {
     /* Set body properties */
     min-height: 100vh;
     font-family: arial;
-    font-size: 16px;
-    margin: 0;
-    background: #fff;
-    color: #000;
+	font-size: 16px;
+	margin: 0;
+	background: #fff;
+	color: #000;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -23,7 +23,6 @@ body {
 
 /* Header styles */
 header {
-    /* Set header properties */
     position: absolute;
     top: 0;
     left: 0;
@@ -37,7 +36,6 @@ header {
 
 /* Logo styles */
 .logo {
-    /* Set logo properties */
     font-size: 2em;
     color: white;
     user-select: none;
@@ -45,7 +43,6 @@ header {
 
 /* Navigation link styles */
 .navigation a {
-    /* Set navigation link properties */
     position: relative;
     font-size: 1.1em;
     color: white;
@@ -59,13 +56,11 @@ header {
 /* Navigation link hover and active styles */
 .navigation a:hover,
 .navigation a.active {
-    /* Set navigation link hover and active properties */
     color: black;
 }
 
 /* Navigation link hover effect background */
 .navigation a span {
-    /* Set navigation link hover effect properties */
     position: absolute;
     top: 0;
     left: 0;
@@ -81,22 +76,20 @@ header {
 
 .navigation a:hover span,
 .navigation a.active span {
-    /* Set navigation link hover effect properties */
     transform: scale(1);
     opacity: 1;
 }
 
-/* Universal box-sizing reset for consistent layout */
-*, *:after, *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
+
+*,*:after,*:before{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 /* Snow animation styles */
 .snow {
-    /* Set snow animation properties */
     position: relative;
     display: flex;
     justify-content: center;
@@ -109,78 +102,73 @@ header {
 
 /* Text over snow animation */
 #text {
-    /* Set text over snow animation properties */
     position: absolute;
     font-size: 5em;
     color: rgb(255, 255, 255);
 }
 
 /* Snow animation container */
-.snow_wrap {
-    /* Set snow animation container properties */
-    height: 100vh;
-    width: 100%;
-    background: url('Images/Home/mountain_view_dark.jpg');
-    background-size: cover;
-    background-position: center bottom;
-    overflow: hidden;
-    position: relative;
+.snow_wrap{
+	height: 100vh;
+	width: 100%;
+	background:url('Images/Home/mountain_view_dark.jpg');
+	background-size: cover;
+	background-position: center bottom; 
+	overflow: hidden;
+	position: relative;
 }
+
+
 
 /* Snowflakes for animation */
 .snow, .snow:before, .snow:after {
-    /* Set snowflakes properties */
-    position: absolute;
-    top: -650px;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-image: 
-        radial-gradient(4px 4px at 100px 50px, #fff , transparent), 
-        radial-gradient(6px 6px at 200px 150px, #fff, transparent), 
-        radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent), 
-        radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent), 
-        radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent), 
-        radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent), 
-        radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent), 
-        radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent), 
-        radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
-    background-size: 650px 650px;
-    animation: snow 4s linear infinite;
-    content: "";
+  position: absolute;
+  top: -650px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-image: 
+  radial-gradient(4px 4px at 100px 50px, #fff , transparent), 
+  radial-gradient(6px 6px at 200px 150px, #fff, transparent), 
+  radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent), 
+  radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent), 
+  radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent), 
+  radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent), 
+  radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent), 
+  radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent), 
+  radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
+  background-size: 650px 650px;
+  animation: snow 4s linear infinite;
+  content: "";
 }
 
 /* Snowflakes for animation */
 .snow:after {
-    /* Set snowflakes properties */
-    margin-left: -250px;
-    opacity: 0.5;
-    filter: blur(2px);
-    animation-duration: 6s;
-    animation-direction: reverse;
+  margin-left: -250px;
+  opacity: 0.5;
+  filter: blur(2px);
+  animation-duration: 6s;
+  animation-direction: reverse;
 }
 
 /* Snowflakes for animation */
 .snow:before {
-    /* Set snowflakes properties */
-    margin-left: -350px;
-    opacity: 0.7;
-    filter: blur(1px);
-    animation-duration: 9s;
-    animation-direction: reverse;
+	margin-left: -350px;
+  opacity: 0.7;
+  filter: blur(1px);
+  animation-duration: 9s;
+  animation-direction: reverse;
 }
 
 /* Keyframes for snow animation */
 @keyframes snow {
-    /* Define keyframes for snow animation */
-    to {
-        transform: translateY(650px);
-    }
+  to {
+    transform: translateY(650px);
+  }
 }
 
 /* Centered text styles */
 .centered-text {
-    /* Set centered text properties */
     position: absolute;
     top: 35%;
     left: 50%;
@@ -190,15 +178,13 @@ header {
 
 /* Centered text content styles */
 .centered-text p {
-    /* Set centered text content properties */
     font-size: 90px;
     font-weight: bold;
-    color: #ffffff;
+    color: #ffffff; 
 }
 
-/* Center text styles */
+/* Centered text styles */
 .center-text {
-    /* Set center text properties */
     position: absolute;
     top: 45%;
     left: 50%;
@@ -208,10 +194,9 @@ header {
 
 /* Centered text content styles */
 .center-text p1 {
-    /* Set center text content properties */
     font-size: 30px;
     font-weight: bold;
-    color: #ffffff;
+    color: #ffffff; 
 }
 
 /* Footer styles */
@@ -237,7 +222,7 @@ header {
     height: auto;
 }
 
-/* White box overlay */
+/* White box overlay */ 
 .white-box {
     background-color: rgb(255, 255, 255);
     position: absolute;
@@ -251,12 +236,12 @@ header {
 }
 
 
-/* Kākāpo */
+
+/*Kākāpo*/
 
 
 /* Kākāpo Container styles for page 2 */
 .container {
-    /* Set container styles for page 2 */
     position: absolute;
     left: 0;
     top: 0;
@@ -268,14 +253,13 @@ header {
 
 /* Keyframes for background animation in container */
 @keyframes animate {
-    /* Define keyframes for background animation in container */
-    0%, 100% {
+    0%,100%{
         background-image: url(Images/Kākāpo/bunk_room.jpg);
     }
-    50% {
+    50%{
         background-image: url(Images/Kākāpo/cabin_view.jpg);
     }
-    75% {
+    75%{
         background-image: url(Images/Kākāpo/hallway.jpg);
     }
 }
@@ -286,88 +270,88 @@ header {
     width: 300px;
     height: 350px;
     margin: 20px;
-}
-
-/* Card container styles */
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50%;
-}
-
-/* Card face styles */
-.card .face {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: .5s;
-}
-
-/* Card front styles */
-.card .front {
-    transform: perspective(600px) rotateY(0deg);
-    box-shadow: 0 5px 10px #000;
-}
-
-/* Card front image styles */
-.card .front img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Card front heading styles */
-.card .front h3 {
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-    height: 45px;
-    line-height: 45px;
-    color: white;
-    background: rgba(0, 0, 0, 0.4);
-    text-align: center;
-}
-
-/* Card back styles */
-.card .back {
-    transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
-    padding: 15px;
-    color: #f3f3f3;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-}
-
-/* Card back heading styles */
-.card .back h3 {
-    font-size: 30px;
-    margin-top: 20px;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-/* Card back paragraph styles */
-.card .back p {
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-/* Card hover styles */
-.card:hover .front {
-    transform: perspective(600px) rotateY(180deg);
-}
-
-/* Card hover styles */
-.card:hover .back {
-    transform: perspective(600px) rotateY(360deg);
-}
+ }
+ 
+ /* Card container styles */
+ .card-container {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: center;
+     margin-top: 50%;
+ }
+ 
+ /* Card face styles */
+ .card .face {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     backface-visibility: hidden;
+     border-radius: 10px;
+     overflow: hidden;
+     transition: .5s;
+ }
+ 
+ /* Card front styles */
+ .card .front {
+     transform: perspective(600px) rotateY(0deg);
+     box-shadow: 0 5px 10px #000;
+ }
+ 
+ /* Card front image styles */
+ .card .front img {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+ 
+ /* Card front heading styles */
+ .card .front h3 {
+     bottom: 0;
+     position: absolute;
+     width: 100%;
+     height: 45px;
+     line-height: 45px;
+     color: white;
+     background: rgba(0,0,0,0.4);
+     text-align: center;
+ }
+ 
+ /* Card back styles */
+ .card .back {
+     transform: perspective(600px) rotateY(180deg);
+     background: rgb(3,35,54);
+     padding: 15px;
+     color: #f3f3f3;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     text-align: center;
+ }
+ 
+ /* Card back heading styles */
+ .card .back h3 {
+     font-size: 30px;
+     margin-top: 20px;
+     letter-spacing: 2px;
+     text-align: center;
+ }
+ 
+ /* Card back paragraph styles */
+ .card .back p {
+     letter-spacing: 1px;
+     text-align: center;
+ }
+ 
+ /* Card hover styles */
+ .card:hover .front {
+     transform: perspective(600px) rotateY(180deg);
+ }
+ 
+ /* Card hover styles */
+ .card:hover .back {
+     transform: perspective(600px) rotateY(360deg);
+ }
 
 
 
@@ -376,6 +360,7 @@ header {
 
 /* Kererū Container styles for page 3 */
 .container1 {
+ 
     position: absolute;
     left: 0;
     top: 0;
@@ -387,16 +372,16 @@ header {
 
 /* Keyframes for background animation in container1 */
 @keyframes animate1 {
-    0%, 100% {
+    0%,100%{
         background-image: url(Images/Kererū/adult_bedroom.jpg);
     }
-    50% {
+    50%{
         background-image: url(Images/Kererū/cabin_exterior.jpg);
     }
-    75% {
+    75%{
         background-image: url(Images/Kererū/kids_bedroom.jpg);
     }
-    95% {
+    95%{
         background-image: url(Images/Kererū/kitchen.jpg);
     }
 }
@@ -432,6 +417,7 @@ header {
 }
 
 /* Card face styles for Kererū page */
+
 .card1 .face {
     position: absolute;
     width: 100%;
@@ -443,12 +429,14 @@ header {
 }
 
 /* Card front styles for Kererū page */
+
 .card1 .front1 {
     transform: perspective(600px) rotateY(0deg);
     box-shadow: 0 5px 10px #000;
 }
 
 /* Card front image styles for Kererū page */
+
 .card1 .front1 img {
     position: absolute;
     width: 100%;
@@ -457,6 +445,7 @@ header {
 }
 
 /* Card front heading styles for Kererū page */
+
 .card1 .front1 h3 {
     bottom: 0;
     position: absolute;
@@ -464,14 +453,14 @@ header {
     height: 45px;
     line-height: 45px;
     color: white;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0,0,0,0.4);
     text-align: center;
 }
 
 /* Card back styles for Kererū page */
 .card1 .back1 {
     transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
+    background: rgb(3,35,54);
     padding: 15px;
     color: #f3f3f3;
     display: flex;
@@ -490,6 +479,7 @@ header {
 /* Card back paragraph styles for Kererū page */
 .card1 .back1 p {
     letter-spacing: 1px;
+
 }
 
 /* Card hover styles for Kererū page */
@@ -503,8 +493,9 @@ header {
 }
 
 
-/* Pūkeko */
 
+
+/* Pūkeko*/
 
 /* Pūkeko Container styles for page 4 */
 .container2 {
@@ -519,21 +510,22 @@ header {
 
 /* Keyframes for background animation in container2 */
 @keyframes animate2 {
-    0%, 100% {
+    0%,100%{
         background-image: url(Images/Pūkeko/adult_bedroom.jpg);
     }
-    50% {
+    50%{
         background-image: url(Images/Pūkeko/bathroom.jpg);
     }
-    75% {
+    75%{
         background-image: url(Images/Pūkeko/chalet_exterior.jpg);
     }
-    95% {
+    95%{
         background-image: url(Images/Pūkeko/chalet_view.jpg);
     }
 }
 
 /* Card styles for Pūkeko page */
+
 .card2 {
     position: relative;
     width: 300px;
@@ -584,14 +576,14 @@ header {
     height: 45px;
     line-height: 45px;
     color: white;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0,0,0,0.4);
     text-align: center;
 }
 
 /* Card back styles for Pūkeko page */
 .card2 .back2 {
     transform: perspective(600px) rotateY(180deg);
-    background: rgb(3, 35, 54);
+    background: rgb(3,35,54);
     padding: 15px;
     color: #f3f3f3;
     display: flex;
@@ -622,21 +614,19 @@ header {
     transform: perspective(600px) rotateY(360deg);
 }
 
-
-
-
-/* Sign Up Page */
+/* Sign Up Page*/
 
 /* Background image styles for Sign Up Page */
 .Image {
     background-image: url('Images/Home/mountain view.jpg');
     background-size: cover;
-    background-position: center top;
+    background-position: center top; 
     width: 100%;
-    height: 65vh;
+    height: 65vh; 
     margin-bottom: 20%;
-}
-
+  }
+  
+  
 /* Middle text styles for Sign Up Page */
 .middle-text {
     text-align: center;
@@ -646,6 +636,7 @@ header {
     font-size: 40px;
     font-weight: bold;
 }
+
 
 /* Sign up form styles */
 .signup-form {
@@ -659,15 +650,15 @@ header {
 }
 
 /* Sign up form label styles */
-.signup-form label {
+  .signup-form label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
 }
 
 /* Sign up form input styles */
-.signup-form input[type="text"],
-.signup-form input[type="file"] {
+  .signup-form input[type="text"],
+  .signup-form input[type="file"] {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -676,7 +667,7 @@ header {
 }
 
 /* Sign up form button styles */
-.signup-form button {
+  .signup-form button {
     background-color: #2196F3;
     color: white;
     padding: 10px 20px;
@@ -707,10 +698,10 @@ header {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-}
-
-/* Snow animation container styles */
-.snow_wrap1 {
+  }
+  
+  /* Snow animation container styles */
+  .snow_wrap1 {
     height: 131vh;
     width: 100%;
     background: url('Images/Home/mountain_view_1.jpg');
@@ -718,54 +709,58 @@ header {
     background-position: center bottom;
     overflow: hidden;
     position: relative;
-    z-index: 1;
-}
-
-/* Snowflakes styles for snow animation */
-.snow1,
-.snow1:before,
-.snow1:after {
+    z-index: 1; 
+  }
+  
+  /* Snowflakes styles for snow animation */
+  .snow1, .snow1:before, .snow1:after {
     position: absolute;
     top: -650px;
     left: 0;
     bottom: 0;
     right: 0;
-    background-image:
-    radial-gradient(4px 4px at 100px 50px, #fff , transparent),
-    radial-gradient(6px 6px at 200px 150px, #fff, transparent),
-    radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent),
-    radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent),
-    radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent),
-    radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent),
-    radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent),
-    radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent),
-    radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
+    background-image: 
+      radial-gradient(4px 4px at 100px 50px, #fff , transparent), 
+      radial-gradient(6px 6px at 200px 150px, #fff, transparent), 
+      radial-gradient(3px 3px at 300px 250px, #fff 50%, transparent), 
+      radial-gradient(4px 4px at 400px 350px, #fff 50%, transparent), 
+      radial-gradient(6px 6px at 500px 100px, #fff 50%, transparent), 
+      radial-gradient(3px 3px at 50px 200px, #fff 50%, transparent), 
+      radial-gradient(4px 4px at 150px 300px, #fff 50%, transparent), 
+      radial-gradient(6px 6px at 250px 400px, #fff 50%, transparent), 
+      radial-gradient(3px 3px at 350px 500px, #fff 50%, transparent);
     background-size: 650px 650px;
     animation: snow 4s linear infinite;
     content: "";
-}
-
-/* Additional snowflakes styles for snow animation */
-.snow1:after {
+  }
+  
+  /* Additional snowflakes styles for snow animation */
+  .snow1:after {
     margin-left: -250px;
     opacity: 0.5;
     filter: blur(2px);
     animation-duration: 6s;
     animation-direction: reverse;
-}
-
-/* Additional snowflakes styles for snow animation */
-.snow1:before {
+  }
+  
+  /* Additional snowflakes styles for snow animation */
+  .snow1:before {
     margin-left: -350px;
     opacity: 0.7;
     filter: blur(1px);
     animation-duration: 9s;
     animation-direction: reverse;
-}
-
-/* Keyframes for snow animation */
-@keyframes snow {
+  }
+  
+  /* Keyframes for snow animation */
+  @keyframes snow {
     to {
-        transform: translateY(650px);
+      transform: translateY(650px);
     }
+  }
+
+  /* Making the Sign up sheet usable*/
+  .middle-text, .signup-form, .text1 {
+    position: relative;
+    z-index: 2; 
 }
