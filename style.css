@@ -206,7 +206,7 @@ header {
     text-align: center;
     padding: 20px 0;
     position: absolute;
-    bottom: -100%;
+    bottom: -135%;
     left: 0;
     right: 0;
 }
@@ -226,8 +226,8 @@ header {
 .white-box {
     background-color: rgb(255, 255, 255);
     position: absolute;
-    top: 1000px; 
-    width: 50%; 
+    top: 800px; 
+    width: 60%; 
 }
 
 /* Heading styles */
@@ -393,7 +393,7 @@ header {
     text-align: center;
     padding: 20px 0;
     position: absolute;
-    bottom: -50%;
+    bottom: -70%;
     left: 0;
     right: 0;
 }
@@ -683,7 +683,7 @@ header {
     text-align: center;
     padding: 20px 0;
     position: absolute;
-    bottom: -40%;
+    bottom: -44%;
     left: 0;
     right: 0;
 }
