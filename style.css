@@ -735,7 +735,7 @@ header {
   
   /* Snow animation container styles */
   .snow_wrap1 {
-    height: 131vh;
+    height: 135vh;
     width: 100%;
     background: url('Images/Home/mountain_view_1.jpg');
     background-size: cover;
