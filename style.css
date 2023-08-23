@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: Acme;
+    src: url('Fonts/Acme-Regular.ttf');
+}
+
 /* Example media query for smaller screens */
 @media (max-width: 768px) {
     /* Adjust styles for smaller screens */
@@ -21,7 +26,7 @@
 body {
     /* Set body properties */
     min-height: 100vh;
-    font-family: arial;
+    font-family: Acme;
 	font-size: 16px;
 	margin: 0;
 	background: #fff;
