@@ -211,7 +211,7 @@ header {
 .center-text p1 {
     font-size: 30px;
     font-weight: bold;
-    color: #ffffff; 
+    color: #d7d3d3; 
 }
 
 /* Footer styles */
@@ -242,7 +242,7 @@ header {
     background-color: rgb(255, 255, 255);
     position: absolute;
     top: 1000px; 
-    width: 60%; 
+    width: 50%; 
 }
 
 /* Heading styles */
