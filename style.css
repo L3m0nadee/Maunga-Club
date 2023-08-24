@@ -7,6 +7,7 @@
     box-sizing: border-box;
 }
 
+/* Custom font for the entire website*/
 @font-face {
     font-family: Acme;
     src: url('Fonts/Acme-Regular.ttf');
