@@ -13,7 +13,7 @@
     src: url('Fonts/Acme-Regular.ttf');
 }
 
-/* Example media query for smaller screens */
+
 @media (max-width: 768px) {
     /* Adjust styles for smaller screens */
     body {
