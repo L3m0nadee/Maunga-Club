@@ -102,20 +102,6 @@ header {
 	box-sizing: border-box;
 }
 
-/* Footer styles for Kākāpo, Kererū and Pūkeko */
-
-.footer1 {
-    background-color: #333;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 20px 0;
-    position: absolute;
-    bottom: -500px;
-    left: 0;
-    right: 0;
-}
-
-
 /* Snow animation styles */
 .snow {
     position: relative;
@@ -263,6 +249,18 @@ header {
     text-align: center;
 }
 
+
+/* Footer styles for Kākāpo, Kererū and Pūkeko */
+.footer1 {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: -500px;
+    left: 0;
+    right: 0;
+}
 
 
 /*Kākāpo*/
