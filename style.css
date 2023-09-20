@@ -1,5 +1,18 @@
 /*Home Page*/
 
+/* Footer styles for Kākāpo, Kererū and Pūkeko */
+
+.footer1 {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px 0;
+    position: absolute;
+    bottom: -500px;
+    left: 0;
+    right: 0;
+}
+
 /* Reset default styles and set box-sizing */
 * {
     margin: 0;
@@ -367,19 +380,6 @@ header {
      transform: perspective(600px) rotateY(360deg);
  }
 
-/* Footer styles for Kākāpo page */
-
-.footer1 {
-    background-color: #333;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 20px 0;
-    position: absolute;
-    bottom: -50%;
-    left: 0;
-    right: 0;
-}
-
 
 /* Kererū /*
 
@@ -411,17 +411,6 @@ header {
     }
 }
 
-/* Footer styles for Kererū page */
-.footer1 {
-    background-color: #333;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 20px 0;
-    position: absolute;
-    bottom: -50%;
-    left: 0;
-    right: 0;
-}
 
 /* Card styles for Kererū page */
 .card1 {
@@ -639,17 +628,6 @@ header {
     transform: perspective(600px) rotateY(360deg);
 }
 
-/* Footer styles for Pūkeko page */
-.footer1 {
-    background-color: #333;
-    color: rgb(255, 255, 255);
-    text-align: center;
-    padding: 20px 0;
-    position: absolute;
-    bottom: -50%;
-    left: 0;
-    right: 0;
-}
 
 /* Sign Up Page*/
 
