@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h2 class="logo"><img src="Images/Home/Maunga_Club_white.png" alt="Logo" width="300"></h2>
+        <nav class="navigation">
+            <a href="index.html">Home<span></span></a>
+            <a href="Kākāpo.html">Kākāpo<span></span></a>
+            <a href="Kererū.html">Kererū<span></span></a>
+            <a href="Pūkeko.html">Pūkeko<span></span></a>
+            <a href="Contact.html" class="active">Sign up<span></span></a>
+        </nav>
+    </header>
+
+
+    <div class="snow_wrap1">
+        <div class="middle-text">
+            <p>Only Club members can access the chalets.
+                <br><br> All chalet bookings must be from Friday to Sunday.</p>
+        </div>
+    
+        <div class="signup-form">
+            <h2>Sign Up</h2>
+            <form action="submit.php" method="post" enctype="multipart/form-data">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+    
+                <label for="address">Physical Address:</label>
+                <input type="text" id="address" name="address" required>
+    
+                <label for="address_proof">Proof of Physical Address:</label>
+                <input type="file" id="address_proof" name="address_proof" accept="image/*" required>
+    
+                <label for="id_proof">Proof of ID:</label>
+                <input type="file" id="id_proof" name="id_proof" accept="image/*" required>
+    
+                <button type="submit">Register</button>
+            </form>
+            
+        </div>
+        
+        <div class="snow1"></div>
+    </div>
+
+    <footer class="footer2">
+        <div class="footer-content">
+            <p>&copy; 2023 Maunga Club Ski Resort. All rights reserved Made by Ziyaad<br><br> Contact at maungaclub@maungaclub.maungaclub</p>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
