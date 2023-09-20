@@ -368,7 +368,7 @@ header {
      transform: perspective(600px) rotateY(360deg);
  }
 
-/* Footer styles for Kākāpo page */
+/* Footer styles for Kākāpo, Kererū and Pūkeko */
 
 .footer1 {
     background-color: #333;
@@ -376,7 +376,7 @@ header {
     text-align: center;
     padding: 20px 0;
     position: absolute;
-    bottom: -500px;
+    bottom: -550px;
     left: 0;
     right: 0;
 }
